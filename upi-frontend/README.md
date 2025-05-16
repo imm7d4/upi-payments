@@ -28,13 +28,14 @@ This is the frontend application for a UPI (Unified Payments Interface) simulati
 - Search by VPA
 - See cashback earned
 - Transaction reference ID shown for every transaction
+- Export transactions to CSV
 
 ### ✅ Recent VPAs
 - Displays most recently used VPAs
 - One-click to re-initiate transfer
 
 ### 🔜 Upcoming Features
-- Export transactions to CSV
+
 - Mark VPAs as Favorites
 - Pagination and performance improvements
 - Visual enhancements with loading spinners, toasts, and form validations
