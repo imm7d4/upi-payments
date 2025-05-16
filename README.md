@@ -107,7 +107,7 @@ JWT_SECRET=your_super_secret_key
 Start the backend server:
 
 ```bash
-npm run dev
+node server.js
 ```
 Server runs on http://localhost:5000
 
