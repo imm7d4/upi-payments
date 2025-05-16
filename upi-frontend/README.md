@@ -1,24 +1,18 @@
 # UPI Payments Frontend (React + Vite)
-
 This is the frontend application for a UPI (Unified Payments Interface) simulation system. It allows users to send money, manage UPI PIN, view transactions, and more. Built using React and Vite with custom CSS.
-
 ## 🚀 Features
-
 ### ✅ Authentication
 - User login and registration
 - Secure UPI PIN setup and update
 - JWT-based authentication flow
-
 ### ✅ User Settings
 - Set or update UPI PIN
 - Change Virtual Payment Address (VPA)
-
 ### ✅ Send Money
 - Send money to any VPA
 - PIN validation before transfer
 - Auto-generate transaction reference ID (e.g., `UPI202505160001`)
 - Smart VPA suggestions based on recent transactions
-
 ### ✅ Transaction History
 - View complete transaction log (sent and received)
 - Filter by:
@@ -29,17 +23,17 @@ This is the frontend application for a UPI (Unified Payments Interface) simulati
 - See cashback earned
 - Transaction reference ID shown for every transaction
 - Export transactions to CSV
-
+- **Clickable VPAs**: Clicking on any other user's VPA redirects to Send Money page with that VPA prefilled
 ### ✅ Recent VPAs
 - Displays most recently used VPAs
 - One-click to re-initiate transfer
-
+### ✅ User QR Code
+- Click on your own VPA in the navbar to generate and display your personal payment QR code
+- QR code can be saved or shared for receiving payments
 ### 🔜 Upcoming Features
-
 - Mark VPAs as Favorites
 - Pagination and performance improvements
 - Visual enhancements with loading spinners, toasts, and form validations
-
 ## 🛠️ Tech Stack
 - **Frontend Framework:** React + Vite
 - **Styling:** Custom CSS (No Tailwind)
@@ -47,7 +41,6 @@ This is the frontend application for a UPI (Unified Payments Interface) simulati
 - **Routing:** React Router DOM
 - **HTTP Requests:** Axios with auth interceptors
 - **Animations:** Framer Motion
-
 ## 🧩 Folder Structure
 ```
 src/
@@ -56,7 +49,8 @@ src/
 │ ├── SendMoneyForm.jsx
 │ ├── Transactions.jsx
 │ ├── UserSettings.jsx
-│ └── RecentSentVPAs.jsx
+│ ├── RecentSentVPAs.jsx
+│ └── QRCodeGenerator.jsx
 │
 ├── context/
 │ └── AuthContext.jsx
@@ -71,33 +65,26 @@ src/
 ├── main.jsx
 └── routes.jsx
 ```
-
 ## 📦 Installation
-
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/upi-frontend.git
    cd upi-frontend
    ```
-
 2. Install dependencies:
    ```bash
    npm install
    ```
-
 3. Set environment variable:
    Create a .env file with the backend URL:
    ```ini
    VITE_API_URL=http://localhost:5000
    ```
-
 4. Run the development server:
    ```bash
    npm run dev
    ```
-
 ## 📸 Screenshots
-
 <details>
 <summary>Click to view screenshots</summary>
 
@@ -105,27 +92,18 @@ src/
 ![Dashboard](screenshots/dashboard.png)
 ![Send Money](screenshots/send-money.png)
 ![Transactions](screenshots/transactions.png)
-
+![QR Code](screenshots/qr-code.png)
 </details>
 
 ## 🧪 Running Tests
-
 ```bash
 npm test
 ```
-
 ## 🚀 Deployment
-
 Build the application for production:
-
 ```bash
 npm run build
 ```
-
 The built files will be in the `dist` directory ready for deployment.
-
 ## 📄 License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
