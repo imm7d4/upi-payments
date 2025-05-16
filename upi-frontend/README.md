@@ -95,10 +95,6 @@ src/
    npm run dev
    ```
 
-## 🔗 Backend Repository
-
-The backend code for this project is available at [github.com/yourusername/upi-backend](https://github.com/yourusername/upi-backend)
-
 ## 📸 Screenshots
 
 <details>
@@ -127,22 +123,8 @@ npm run build
 
 The built files will be in the `dist` directory ready for deployment.
 
-## 👥 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
-
-Project Link: [https://github.com/yourusername/upi-frontend](https://github.com/yourusername/upi-frontend)
