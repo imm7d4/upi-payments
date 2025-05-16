@@ -92,7 +92,7 @@ src/
 ![Dashboard](screenshots/dashboard.png)
 ![Send Money](screenshots/send-money.png)
 ![Transactions](screenshots/transactions.png)
-![QR Code](screenshots/qr-code.png)
+![User Settings](screenshots/user-settings.png)
 </details>
 
 ## 🧪 Running Tests
