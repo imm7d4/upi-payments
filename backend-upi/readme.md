@@ -119,7 +119,7 @@ npm start
 | Method | Endpoint          | Description                      | Auth Required |
 |--------|-------------------|---------------------------------|---------------|
 | POST   | /send             | Send money from one VPA to another | ✅           |
-| GET    | /history/:vpa     | Get full transaction history for a VPA | ❌       |
+| GET    | /history/:vpa     | Get full transaction history for a VPA | ✅       |
 | GET    | /history          | Get logged-in user’s history (with filters) | ✅    |
 
 **Transaction Filters (Query Params):**
@@ -133,7 +133,7 @@ npm start
 
 | Method | Endpoint   | Description             | Auth Required |
 |--------|------------|-------------------------|---------------|
-| GET    | /:vpa      | Get audit logs for a VPA | ❌            |
+| GET    | /:vpa      | Get audit logs for a VPA | ✅            |
 
 ---
 
