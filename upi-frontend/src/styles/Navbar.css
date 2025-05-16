@@ -1,0 +1,235 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  color: #e0e0e0;
+  padding: 12px 28px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.45);
+  animation: slideDown 0.3s ease-in-out;
+  width: 100%;
+  min-width: 320px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 32px;
+  color: #00bfa6;
+  letter-spacing: 1.1px;
+  user-select: text;
+}
+
+.nav-link {
+  color: #ccc;
+  margin-right: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #00f2b7;
+  background-color: rgba(0, 191, 166, 0.15);
+  outline: none;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.nav-right {
+    
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 500;
+}
+
+.clock {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.95rem;
+  color: #9e9e9e;
+  width: 105px;
+  text-align: center;
+  user-select: none;
+}
+
+.user-info {
+    width: 190px;
+  font-size: 1rem;
+  color: #ddd;
+  opacity: 0.9;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: text;
+}
+
+.balance-display {
+  font-weight: 700;
+  color: #00d97e;
+  font-size: 1.05rem;
+  min-width: 70px;
+  text-align: right;
+  user-select: text;
+  transition: color 0.3s ease;
+}
+
+.balance-display:hover {
+  color: #00ffa2;
+}
+
+.logout-btn {
+  background-color: #00bfa6;
+  color: #fff;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0, 191, 166, 0.4);
+  transition: background-color 0.25s, box-shadow 0.25s;
+  user-select: none;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  background-color: #009e8a;
+  box-shadow: 0 6px 15px rgba(0, 159, 138, 0.6);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 680px) {
+  .navbar {
+    width: 90vw;
+    padding: 10px 16px;
+    border-radius: 10px;
+  }
+
+  .nav-left .logo {
+    font-size: 1.25rem;
+    margin-right: 16px;
+  }
+
+  .nav-link {
+    margin-right: 12px;
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+
+  .nav-right {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .balance-display {
+    min-width: 50px;
+    font-size: 0.95rem;
+  }
+}
+.clickable-vpa {
+  cursor: pointer;
+  user-select: all;
+  transition: color 0.2s ease;
+}
+.clickable-vpa:hover {
+  color: #00f2b7;
+  text-decoration: underline;
+}
+
+/* Modal background */
+.qr-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal box */
+.qr-modal {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  max-width: 280px;
+  width: 90%;
+}
+
+.qr-modal h3 {
+  margin-bottom: 15px;
+}
+
+.qr-modal p {
+  margin-top: 15px;
+  font-weight: 600;
+  word-break: break-all;
+  color: #333;
+}
+
+.close-btn {
+  margin-top: 20px;
+  background-color: #00bfa6;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #009e8a;
+}
+.nav-link {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #00bfa6;
+}
+
+.nav-link.active {
+  color: #00bfa6;
+  border-bottom-color: #00bfa6;
+}

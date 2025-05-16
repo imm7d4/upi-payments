@@ -1,0 +1,61 @@
+/* Fade-in + bounce on load */
+@keyframes fadeBounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Circle style + animation */
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* start hidden for animation */
+  animation-fill-mode: forwards;
+}
+
+/* Icon inside circle */
+.circle i {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+/* VPA text below icon */
+.vpa-text {
+  font-size: 12px;
+  word-break: break-word;
+  text-align: center;
+}
+
+/* Animation on mount with staggered delay */
+.animated-circle {
+  animation-name: fadeBounceIn;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+/* Hover effect: scale + glow */
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+}
