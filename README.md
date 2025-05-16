@@ -58,30 +58,31 @@ This is a full-stack simulation of a UPI (Unified Payments Interface) system —
 
 ## 📁 Folder Structure Overview
 
+```
 project-root/
 ├── backend/
-│   ├── routes/            # API endpoint definitions
-│   │   ├── auth.js        # Authentication routes
-│   │   ├── user.js        # User management routes
-│   │   ├── transaction.js # Transaction management routes
-│   │   └── audit.js       # Audit logging routes
-│   ├── models/            # Database models
-│   │   ├── User.js        # User schema and model
-│   │   └── Transaction.js # Transaction schema and model
-│   ├── middleware/        # Express middleware
-│   │   ├── auth.js        # JWT authentication middleware
-│   │   └── pinValidator.js # PIN validation middleware
-│   └── index.js           # Express entry point
+│   ├── routes/                # API endpoint definitions
+│   │   ├── auth.js            # Authentication routes
+│   │   ├── user.js            # User management routes
+│   │   ├── transaction.js     # Transaction management routes
+│   │   └── audit.js           # Audit logging routes
+│   ├── models/                # Database models
+│   │   ├── User.js            # User schema and model
+│   │   └── Transaction.js     # Transaction schema and model
+│   ├── middleware/            # Express middleware
+│   │   ├── auth.js            # JWT authentication middleware
+│   │   └── pinValidator.js    # PIN validation middleware
+│   └── index.js               # Express entry point
 ├── frontend/
-│   ├── components/        # React components
-│   │   ├── SendMoneyForm  # Money transfer form component
-│   │   └── Transactions   # Transaction history component
-│   ├── context/           # React context providers
-│   │   └── AuthContext.jsx # Authentication context
-│   ├── utils/             # Utility functions
-│   │   └── api.js         # Axios instance and API helpers
-│   └── main.jsx           # Vite entry point
-
+│   ├── components/            # React components
+│   │   ├── SendMoneyForm      # Money transfer form component
+│   │   └── Transactions       # Transaction history component
+│   ├── context/               # React context providers
+│   │   └── AuthContext.jsx    # Authentication context
+│   ├── utils/                 # Utility functions
+│   │   └── api.js             # Axios instance and API helpers
+│   └── main.jsx               # Vite entry point
+```
 ## 🔧 Installation & Setup
 
 ### 1. Clone the repo
